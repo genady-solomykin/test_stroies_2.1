@@ -31,7 +31,7 @@ class StoriesSlider {
 
     if (!this.modal) {
       this.modal = document.createElement("div");
-      this.modal.classList.add("slider", "slider-none");
+      this.modal.classList.add("slider");
       this.mountedSound = document.createElement('div');
 
       const swiperElement = this.makeSwiperOnModal();
@@ -313,7 +313,7 @@ class StoriesSlider {
   init() {
     this.makeStoriesCircles();
     this.getDataTime();
-    this.showModalSlider();
+//     this.showModalSlider();
     // this.turnOnTurnoffSound();
     this.makeStoriesModalMuted()
     this.makeStoriesModal(this.makeStoriesTemplate());
